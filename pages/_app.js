@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Head from "next/head";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import MainAppBar from "../src/components/MainAppBar";
 import theme from "../style/theme";
 
 export default function MyApp(props) {
@@ -25,6 +26,7 @@ export default function MyApp(props) {
       <MuiThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
+        <MainAppBar />
         <Component {...pageProps} />
       </MuiThemeProvider>
     </>
