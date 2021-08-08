@@ -1,4 +1,6 @@
+import { Container } from "@material-ui/core";
 import Head from "next/head";
+import GradeLevels from "../src/components/GradeLevelsAccordian";
 
 export default function Home() {
   return (
@@ -9,7 +11,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main></main>
+      <main>
+        <Container>
+          <GradeLevels />
+        </Container>
+      </main>
 
       <footer></footer>
     </>
